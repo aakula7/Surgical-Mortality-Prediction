@@ -16,18 +16,6 @@ elixhauser9 <- comorbidity(x = Codes09, id = "RECORD_ID", code = "CODE", score =
 
 View(elixhauser9)
 
-charlsonColKeep <- c('RECORD_ID', 'score', 'index', 'wscore', 'windex')
+write.csv(charlson9, 'Charlson_09.csv')
 
-charlson9New <- charlson9[charlsonColKeep]
-
-elixhauserColKeep <- c('RECORD_ID', 'score', 'index', 'wscore_ahrq', 'wscore_vw', 'windex_ahrq', 'windex_vw')
-
-elixhauser9New <- elixhauser9[elixhauserColKeep]
-
-View(charlson9New)
-
-View(elixhauser9New)
-
-write.csv(charlson9New, 'Charlson_09.csv')
-
-write.csv(elixhauser9New, 'Elixhauser_09.csv')
+write.csv(elixhauser9, 'Elixhauser_09.csv')
