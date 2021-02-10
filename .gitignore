@@ -130,7 +130,6 @@ dmypy.json
 
 #Files to ignore
 Texas Data Use Agreement.pdf
-Base_06.csv
-Base_10.csv
-Base_11.csv
-Base_07_Subset.csv
+**/*.csv
+**/*.xls
+**/*.xlsx
